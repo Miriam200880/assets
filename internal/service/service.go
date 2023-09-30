@@ -1,4 +1,4 @@
-package service
+package 
 
 import (
 	"github.com/trustwallet/assets-go-libs/file"
@@ -38,17 +38,25 @@ func (s *Service) RunJob(job func(*file.AssetFile)) {
 	} else {
 		log.Info(reportMsg)
 	}
-}
+}*file.AssetFile) {
 
-func (s *Service) Check(f *file.AssetFile) {
-	validators := s.processorService.GetValidator(f)
+	
+	
 
-	for _, validator := range validators {
-		if err := validator.Run(f); err != nil {
-			s.handleError(err, f, validator.Name)
-		}
-	}
-}
+
+
+
+	
+
+
+
+
+		
+
+
+		
+
+
 
 func (s *Service) Fix(f *file.AssetFile) {
 	fixers := s.processorService.GetFixers(f)
