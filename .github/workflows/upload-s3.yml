@@ -1,4 +1,4 @@
-name: Upload S3
+name: Upload S3.yml
 on:
   push:
     branches:
